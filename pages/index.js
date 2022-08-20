@@ -20,7 +20,7 @@ export default function Home() {
               cardList.map((item, key) => (
                 <div className='card' key={key}>
                   <img src={`/min/${key}.webp`} alt={`${key}.webp`} />
-                  <a href={`/cards/${key}.png`} target="_blank" className='arrow'></a>
+                  <a href={`/cards/${key}.png`} target="_blank" rel="noreferrer" className='arrow'></a>
                 </div>
               ))
             }
