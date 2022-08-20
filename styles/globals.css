@@ -1,26 +1,19 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    @apply bg-[#f9f9fb] font-sans;
+}
+.arrow{
+    @apply bg-[url('/arrow.svg')] w-8 h-8 bg-white bg-no-repeat bg-bottom block rounded-full absolute right-3 top-3;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+.card{
+    @apply relative rounded-md;
+    box-shadow:-4px 9px 25px -6px rgb(0 0 0 / 10%);
 }
 
-* {
-  box-sizing: border-box;
-}
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+.card img{
+    @apply rounded-md;
 }
