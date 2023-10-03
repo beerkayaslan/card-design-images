@@ -4,6 +4,7 @@ import Image from 'next/image'
 export default function Home() {
 
   const cardList = new Array(200).fill(0);
+  console.log('test');
 
   return (
     <div>
